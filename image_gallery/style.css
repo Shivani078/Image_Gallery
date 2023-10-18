@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;  
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    
+}
+.gallery a {
+    display: inline-block;
+    width: 100%;
+    border: 5px solid #000; /* Add a border around each image */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease; /* Smooth transition for the border color change */
+  }
+  .gallery a:hover {
+    border-color: #af6f20; /* Change the border color on hover */
+  }
